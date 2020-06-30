@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   box-sizing: border-box;
   padding: 2em 1.6em;
-  width: 100%;  
+  width: 100%;
 }
 
 .datePicker {
@@ -27,15 +27,16 @@
   fill: #fff !important;
 }
 
-#exploreStartDate, #exploreEndDate {
+#exploreStartDate,
+#exploreEndDate {
   box-sizing: border-box;
-  background-color: #EBEBEB;
-  background-image: url('../../assets/calendar.svg');
+  background-color: #ebebeb;
+  background-image: url("../../assets/calendar.svg");
   background-repeat: no-repeat;
   background-position: right 20px center;
   background-size: 2em;
   border-radius: 5px;
-  font-size: .7em;
+  font-size: 0.7em;
   height: min-content;
   width: 100%;
   padding: 2em;
@@ -52,6 +53,11 @@
   justify-content: space-evenly;
   align-items: center;
   outline: none;
+  cursor: pointer;
+}
+
+.proceedBtn:active {
+  transform: scale(.96);
 }
 
 .proLogo {
