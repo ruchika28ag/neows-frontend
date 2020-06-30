@@ -1,0 +1,29 @@
+.asteroidCard {
+    box-sizing: border-box;
+    background: #191919;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 45%;
+    min-height: 80px;
+    padding: 1em 2em;
+    margin: 1.5em 0;
+    border-radius: 6px;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    border-left: solid 4px #87fb1d;
+}
+
+.hazard {
+    border-left: solid 5px #ff1b1c;
+}
+
+.astName {
+    font-weight: bold;
+    margin-bottom: 2px;
+    /* border-bottom: solid 2px darkgray; */
+    font-size: 1.5em;
+    color: #f2bb05;
+}
+.astId, .astDiam {
+    color: white;
+}

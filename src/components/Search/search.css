@@ -1,28 +1,70 @@
 .searchDiv {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    background: url('../../assets/searchbg.jpg');
-    background-size: cover;
-    background-position: center;
-    min-height: 40vh;
-    justify-content: center;
-    padding: 15vh 0;
 }
 
+.tabs{
+    display: flex;
+}
+
+.explore , .search {
+    display: flex;
+    align-items: center;
+    background: white;
+    border: none;
+    font-family: inherit;
+    outline: none;
+    padding: 0.5em 1.8em;
+}
+
+.explore {
+    border-radius: 18px 0 0 0;
+}
+
+.search {
+    border-radius: 0 5px 0 0;
+}
+
+.expLogo {
+    height: 1.8em;
+}
+
+.searLogo {
+    height: 1.3em;
+}
+
+.exploreTitle, .searchTitle {
+    font: 1em;
+    padding: 0 0 0 1em;
+}
+
+.active {
+    background-color: #E66367;
+    color: white;
+}
+
+.inputContainer {
+    display: flex;
+    border-radius: 0 20px 20px 20px;
+    box-shadow: 0px 40px 99px #00000029;
+    background-color: white;
+}
+
+/* 
 .siteHead {
+    font-family: sans-serif;
     color: white;
     text-transform: uppercase;
-    letter-spacing: 0.1em;
-    font-weight: 800;
+    letter-spacing: 0.4em;
+    font-weight: 200;
     font-size: 4em;
-    margin: 0;
-    margin-bottom: 25px;
+    margin: 0 0 12px 0.4em;
 }
 
 .searchForm {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 12px;
 }
 
 .searchInput, .searchbtn{
@@ -42,4 +84,4 @@
     text-transform: uppercase;
     letter-spacing: 0.1em;
     cursor: pointer;
-}
+} */

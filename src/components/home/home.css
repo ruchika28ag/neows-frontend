@@ -3,4 +3,23 @@
     flex-direction: column;
     justify-content: center;
     width: 100%;
+    background-color: #FAFAFA;
+    align-items: center;
+}
+
+.searchContainer {
+    width: 68%;
+    transform: translateY(-50%);
+}
+
+.astContainer {
+    width: 68%;
+    display: flex;
+    flex-direction: column;
+    transform: translateY(-2%);
+}
+
+.latest {
+    font-size: 3em;
+    font-weight: 900;
 }

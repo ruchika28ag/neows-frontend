@@ -1,0 +1,59 @@
+.exploreInput {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  padding: 2em 1.6em;
+  width: 100%;  
+}
+
+.datePicker {
+  width: 75%;
+}
+
+.DateRangePicker {
+  width: 100%;
+}
+
+.DateRangePickerInput {
+  width: 100%;
+}
+
+.DateInput {
+  width: 45% !important;
+  background: none !important;
+}
+
+.DateRangePickerInput_arrow_svg {
+  fill: #fff !important;
+}
+
+#exploreStartDate, #exploreEndDate {
+  box-sizing: border-box;
+  background-color: #EBEBEB;
+  background-image: url('../../assets/calendar.svg');
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  background-size: 2em;
+  border-radius: 5px;
+  font-size: .7em;
+  height: min-content;
+  width: 100%;
+  padding: 2em;
+}
+
+.proceedBtn {
+  display: flex;
+  background-color: black;
+  border: none;
+  border-radius: 5px;
+  width: 25%;
+  font-family: inherit;
+  color: white;
+  justify-content: space-evenly;
+  align-items: center;
+  outline: none;
+}
+
+.proLogo {
+  height: 2em;
+}

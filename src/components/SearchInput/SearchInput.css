@@ -1,0 +1,24 @@
+.searchInput {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  padding: 2em 1.6em;
+  width: 100%;  
+}
+
+.searchBox {
+  box-sizing: border-box;
+  width: 75%;
+  padding: 0 2em 0 0;
+}
+
+.inputBox {
+  box-sizing: border-box;
+  background-color: #EBEBEB;
+  border: none;
+  border-radius: 5px;
+  font-size: .7em;
+  height: min-content;
+  width: 100%;
+  padding: 2.1em
+}
