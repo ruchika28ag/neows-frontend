@@ -3,7 +3,7 @@ import AsteroidCard from "../asteroidCard/asteroidCard";
 import "./asteroidArray.css";
 
 const AsteroidArray = ({ asteroids, setAsteroids, isToday, setIsToday }) => {
-  console.log(asteroids);
+  // console.log(asteroids);
 
   useEffect(() => {
     if (asteroids.length === 0) {

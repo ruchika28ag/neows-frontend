@@ -24,7 +24,7 @@ import "./asteroidCard.css";
 //   },
 // };
 
-const AsteroidCard = ({asteroid}) => {
+const AsteroidCard = ({ asteroid }) => {
   const {
     name,
     id,
@@ -34,7 +34,11 @@ const AsteroidCard = ({asteroid}) => {
     is_potentially_hazardous_asteroid,
   } = asteroid;
   return (
-    <div className= {`asteroidCard ${is_potentially_hazardous_asteroid && 'hazard'}`}>
+    <div
+      className={`asteroidCard ${
+        is_potentially_hazardous_asteroid && "hazard"
+      }`}
+    >
       <span className="astName">{name}</span>
       <span className="astId">ID: {id}</span>
       <span className="astDiam">

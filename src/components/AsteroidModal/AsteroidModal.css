@@ -1,0 +1,95 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap"); */
+
+.astModal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* right: 40px;
+  bottom: 40px; */
+  /* width: max-content; */
+  /* height: max-content; */
+  max-height: 80vh;
+  max-width: 80vw;
+  border: 1px solid rgb(204, 204, 204);
+  background: #191919;
+  color: white;
+  overflow: auto;
+  border-radius: 8px;
+  outline: none;
+  padding: 20px;
+}
+
+.modalContent {
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modalHead {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.modalTitle {
+  font-size: 2.5em;
+  color: #ffc857;
+}
+
+.modalSubtitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.modalID {
+  color: #177e89;
+  font-size: 1.5em;
+}
+
+.status {
+  background: #87fb1d;
+  height: 0.8em;
+  width: 0.8em;
+  border-radius: 100%;
+  margin: 0.3em 0 0 0.3em;
+}
+
+.hazardous {
+  background: #ff1b1c;
+}
+
+.modalList {
+  color: #f1e4e8;
+  list-style-type: "\2605";
+  /* font-family: 'Source Sans Pro', sans-serif; */
+}
+
+.modalDia,
+.modalOrbit,
+.modalCloseApproach {
+  padding: 0.5em;
+}
+
+.modalOrbitalList,
+.modalCloseApList {
+  list-style-type: "-- ";
+}
+
+.modalOkButton {
+  width: 25%;
+  font-family: inherit;
+  cursor: pointer;
+  background: #a0ddff;
+  border: none;;
+  border-radius: 5px;
+  outline: none;
+  font-size: 1em;
+}
+
+.modalOkButton:active {
+  transform: scale(.96);
+}

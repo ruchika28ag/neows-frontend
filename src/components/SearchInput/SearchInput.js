@@ -1,37 +1,49 @@
-import React, { useState } from 'react';
-import {ReactComponent as ProLogo} from '../../assets/proceed.svg';
-import './SearchInput.css'
+import React, { useState } from "react";
+import { ReactComponent as ProLogo } from "../../assets/proceed.svg";
+import "./SearchInput.css";
+import AsteroidModal from "../AsteroidModal/AsteroidModal";
 
 const SearchInput = () => {
+  const [value, setValue] = useState("");
+  // const [isOpen, setIsOpen] = useState(false);
+  const [asteroid, setAsteroid] = useState(null);
 
-  const [value, setValue] = useState('');
+  const handleChange = (event) => {
+    setValue(event.target.value);
+  };
 
-  const handleChange = event => {
-      setValue(event.target.value);
-  }
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    if (value) {
+      fetch(`https://api.nasa.gov/neo/rest/v1/neo/${value}?api_key=DEMO_KEY`)
+        .then((res) => res.json())
+        .then((aster) => {
+          setAsteroid(aster);
+          setValue("");
+        });
+    }
+  };
 
-  const handleSubmit = event => {
-      event.preventDefault();
-      if(value){
-          const id= value;
-          setValue('');
-          fetch(`https://api.nasa.gov/neo/rest/v1/neo/${id}?api_key=DEMO_KEY`)
-          .then(res => res.json())
-          .then((aster) => console.log(aster));
-      }
-  }
-
-  return(
+  return (
     <form className="searchInput" onSubmit={handleSubmit}>
       <div className="searchBox">
-        <input className="inputBox" placeholder="Enter Asteroid ID" onChange={handleChange}></input>
+        <input
+          className="inputBox"
+          placeholder="Enter Asteroid ID"
+          value={value}
+          onChange={handleChange}
+        ></input>
       </div>
       <button className="proceedBtn" type="submit">
         <span className="proceed">PROCEED</span>
         <ProLogo className="proLogo" />
       </button>
+      <AsteroidModal
+        setAsteroid={setAsteroid}
+        asteroid={asteroid}
+      />
     </form>
-  )
-}
+  );
+};
 
 export default SearchInput;
